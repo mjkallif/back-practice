@@ -10,6 +10,12 @@ body{
     background: none;
     height: inherit;
 }
+a, h1, p{color: #181111; transition: all 0.5s;}
+a, p{font-size: 18px;}
+a:hover{color: #570542; transition: all 0.5s;}
+ul{
+    list-style-type: disclosure-open;
+}
 .main_content{
     display: flex;
     flex-direction: column;
@@ -24,20 +30,31 @@ body{
     align-items: center;
     gap: 10px;
     padding: 20px;
-    background: rgba(73, 72, 72, 0.308);
+    background: rgba(73, 72, 72, 0.651);
     border-radius: 25px;
 }
 .exile{display: flex; gap: 10px;}
-.exile a{
-    width: 150px;
-    padding: 10px 15px 10px 15px;
-    background: rgb(75, 12, 72);
-    border-radius: 25px;
+.main_content_block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.main_content_block a{
+
+}
+a{
     font-size: 16px;
     text-align: center;
     line-height: 16px;
     text-decoration: none;
+}
+.exile a{
     color: rgb(158, 8, 138);
+    width: 150px;
+    padding: 10px 15px 10px 15px;
+    background: rgb(75, 12, 72);
+    border-radius: 25px;
     transition: all 0.5s cubic-bezier(1,-1.53,.52,1.53);
 }
 .exile a:hover{
